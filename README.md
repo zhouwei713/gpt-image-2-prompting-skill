@@ -26,6 +26,9 @@ A high-quality prompting skill for GPT-Image-2 that turns vague image ideas into
 
 ## Quick Start
 
+If you want to improve this repository, see [CONTRIBUTING.md](CONTRIBUTING.md).
+
+
 ### Hermes
 
 1. Put this skill folder into your Hermes skills directory
