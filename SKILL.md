@@ -1,6 +1,6 @@
 ---
 name: gpt-image-2-prompting
-description: Write high-quality GPT-Image-2 prompts with strong structure, layout logic, and production-ready visual direction. Use this skill whenever the user asks for image prompts, wants better GPT-Image-2 prompting, wants to upgrade a weak image prompt, asks for prompt templates, wants series-style prompt systems, or needs prompts for posters, UI screens, information graphics, concept art, brand visuals, editorial layouts, or worldbuilding images.
+description: Write high-quality GPT-Image-2 prompts with strong structure, layout logic, and production-ready visual direction. Use this skill whenever the user asks for image prompts, wants better GPT-Image-2 prompting, wants to upgrade a weak image prompt, asks for prompt templates, wants series-style prompt systems, needs prompts for posters, UI screens, information graphics, concept art, brand visuals, editorial layouts, or worldbuilding images, or wants funny, absurd, meme-like, fake-news-style, and highly shareable visual prompts.
 version: 1.0.0
 author: Hermes Agent
 license: MIT
@@ -23,7 +23,9 @@ Trigger this skill whenever the user:
 - wants to improve a weak prompt
 - wants prompts for posters, covers, UI, dashboards, information graphics, packaging, editorial layouts, concept art, or worldbuilding
 - asks for prompt templates, batch prompt ideas, themed prompt packs, or reusable prompt systems
-- says things like “帮我写提示词”, “优化提示词”, “给我一组出图更高级的 prompt”, “做成系列提示词”
+- wants funny, weird, meme-like, absurd, tabloid-style, or viral image prompts
+- wants prompts for celebrity mashups, fake news scenes, cursed images, bizarre street photos, surveillance-camera style images, or humorous historical/modern contrast
+- says things like “帮我写提示词”, “优化提示词”, “给我一组出图更高级的 prompt”, “做成系列提示词”, “来点搞怪的”, “整点抽象图”, “做成会传播的图”
 
 ## What this skill optimizes for
 
@@ -32,6 +34,8 @@ Trigger this skill whenever the user:
 3. Specific layout and information modules
 4. Better conversion of abstract taste words into concrete visual directions
 5. Reusable prompt systems instead of one-off lines
+6. Strong contrast, absurdity, and meme potential when the goal is funny or viral content
+7. Real-photo plausibility for fake-news, candid, paparazzi, and surveillance-style images
 
 ## Default workflow
 
@@ -110,6 +114,26 @@ If the user wants stronger output, consider turning one prompt into a repeatable
 - same structure, different product line
 
 This usually produces better series content than writing unrelated prompts.
+
+### Step 6: If the goal is funny or viral, add a contrast engine
+
+For quirky, humorous, or shareable prompts, deliberately introduce one or more of these contrast patterns:
+- serious person in a trivial daily-life scene
+- historical or mythic figure in a modern low-stakes setting
+- luxury visual language applied to ordinary places
+- fake-news realism applied to absurd events
+- surveillance, paparazzi, flash-photo, or accidental-candid framing
+- animals behaving like professionals while humans act normal
+
+Useful realism cues:
+- candid photo
+- flash photography
+- paparazzi shot
+- surveillance camera still
+- tabloid photo
+- awkward timing
+- accidental masterpiece
+- bizarre realism
 
 ## Prompt writing rules
 
@@ -253,6 +277,9 @@ If the user gives a weak prompt, rewrite it by upgrading in this order:
 
 Use the reference file `references/categories.md` for category patterns and representative examples.
 Use `references/templates.md` for reusable fill-in-the-blank templates.
+Use `references/examples.md` for polished baseline examples.
+Use `references/quirky-funny-100-prompts.md` for funny, bizarre, celebrity-contrast, fake-news, and meme-ready prompt ideas.
+Use `references/quirky-funny-100-prompts-part2.md` for more chaotic, viral, surveillance-style, and absurd-realism prompt ideas.
 
 ## Common mistakes to avoid
 

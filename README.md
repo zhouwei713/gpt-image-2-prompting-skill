@@ -207,7 +207,7 @@ Skill 会优先补充这些常见模块：
 
 ### 内置参考内容
 
-这个 Skill 自带 3 份参考文件：
+这个 Skill 自带 5 份参考文件：
 
 #### 1. `references/templates.md`
 可复用 Prompt 模板库，适合快速扩写。
@@ -226,6 +226,12 @@ Skill 会优先补充这些常见模块：
 #### 3. `references/examples.md`
 代表性示例集合，适合直接借鉴或做结构映射。
 
+#### 4. `references/quirky-funny-100-prompts.md`
+偏机灵古怪、反差感、假新闻感、名人乱入日常的 100 条提示词，适合做传播图、玩梗图、搞怪图。
+
+#### 5. `references/quirky-funny-100-prompts-part2.md`
+第二批更偏发疯感、监控截图感、社交媒体 meme 感、职场抽象感的 100 条提示词，适合继续扩写成系列内容。
+
 ---
 
 ### 目录结构
@@ -237,7 +243,9 @@ gpt-image-2-prompting/
 └── references/
     ├── templates.md
     ├── categories.md
-    └── examples.md
+    ├── examples.md
+    ├── quirky-funny-100-prompts.md
+    └── quirky-funny-100-prompts-part2.md
 ```
 
 ---
@@ -303,6 +311,9 @@ Skill 会按这个顺序改写：
 - 做一组海报风 Prompt
 - 按资料包结构给我 20 条 Prompt
 - 把这个模糊想法变成可直接用的 Prompt
+- 给我 20 条搞怪、容易传播的 Prompt
+- 做一组假新闻感 / 偷拍感 / 监控截图感的图片 Prompt
+- 帮我把这条图像想法改得更抽象、更好笑一点
 
 ---
 
@@ -465,7 +476,7 @@ This makes it suitable for:
 
 ### Included reference files
 
-This skill ships with three reference files:
+This skill ships with five reference files:
 
 #### `references/templates.md`
 Reusable prompt templates for fast expansion.
@@ -484,6 +495,12 @@ A category map that compresses the full prompt library into 10 reusable archetyp
 #### `references/examples.md`
 Representative example prompts that can be adapted directly or used as structural references.
 
+#### `references/quirky-funny-100-prompts.md`
+A first batch of 100 funny, bizarre, contrast-heavy, fake-news, and celebrity-in-everyday-life prompts for more shareable images.
+
+#### `references/quirky-funny-100-prompts-part2.md`
+A second batch of 100 more chaotic prompts focused on surveillance-camera energy, meme realism, workplace absurdity, and viral-photo logic.
+
 ---
 
 ### Directory structure
@@ -495,7 +512,9 @@ gpt-image-2-prompting/
 └── references/
     ├── templates.md
     ├── categories.md
-    └── examples.md
+    ├── examples.md
+    ├── quirky-funny-100-prompts.md
+    └── quirky-funny-100-prompts-part2.md
 ```
 
 ---
@@ -562,6 +581,9 @@ Typical requests:
 - create a poster prompt pack
 - give me 20 prompts in a structured prompt-pack style
 - turn this vague idea into a usable prompt
+- give me 20 funny viral prompts
+- make this image idea weirder, more meme-like, or more shareable
+- write a fake-news-style or paparazzi-style image prompt
 
 ---
 
