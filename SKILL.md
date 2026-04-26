@@ -1,6 +1,6 @@
 ---
 name: gpt-image-2-prompting
-description: Write high-quality GPT-Image-2 prompts with strong structure, layout logic, and production-ready visual direction. Use this skill whenever the user asks for image prompts, wants better GPT-Image-2 prompting, wants to upgrade a weak image prompt, asks for prompt templates, wants series-style prompt systems, needs prompts for posters, UI screens, information graphics, concept art, brand visuals, editorial layouts, or worldbuilding images, or wants funny, absurd, meme-like, fake-news-style, and highly shareable visual prompts.
+description: Write high-quality GPT-Image-2 prompts with strong structure, layout logic, and production-ready visual direction. Use this skill whenever the user asks for image prompts, wants better GPT-Image-2 prompting, wants to upgrade a weak image prompt, asks for prompt templates, wants series-style prompt systems, needs prompts for posters, UI screens, information graphics, concept art, brand visuals, editorial layouts, or worldbuilding images, or wants funny, absurd, meme-like, fake-news-style, and highly shareable visual prompts. If the current Hermes environment exposes an image generation tool/model, this skill should also offer to generate an image from the finalized prompt after presenting the prompt.
 version: 1.0.0
 author: Hermes Agent
 license: MIT
@@ -161,6 +161,16 @@ A polished prompt in the user’s language.
 ### 4. Optional variations
 3 short variant directions if useful.
 
+### 5. Optional image generation offer
+After the final prompt output is complete, check whether the current environment exposes an image generation tool such as `image_generate` or an equivalent configured image model.
+
+If image generation is available and the user did not already ask you to generate the image immediately, add one concise closing question:
+“要不要我直接用这条 Prompt 帮你生成一张图？”
+
+Do not generate the image automatically unless the user explicitly asks for generation or answers yes. If the user says yes, call the image generation tool with the finalized prompt. Use the aspect ratio specified in the prompt when it maps cleanly to the tool’s supported ratios; otherwise infer the closest supported ratio and mention the choice briefly.
+
+If no image generation tool/model is available in the environment, do not pretend generation is possible. Just provide the prompt, or say the prompt can be copied into the user’s image model if relevant.
+
 ## Chinese default output style
 
 When the user writes in Chinese, default to Chinese output unless they request another language.
@@ -186,6 +196,14 @@ Offer 2-3 short variation directions when useful, such as:
 - 换职业 / 换情绪
 - 换媒介形态（海报、UI、信息图、档案页）
 - 换色彩和材质系统
+
+### 5. 是否直接生图
+如果当前环境配置了可用的生图工具或生图模型，例如 Hermes 的 `image_generate` 工具，在完成 Prompt 输出后，用一句话询问用户是否要直接生成图片：
+“要不要我直接用这条 Prompt 帮你生成一张图？”
+
+只有在用户明确要求“直接生成/帮我出图/生成一张”或用户回答确认后，才调用生图工具。不要在用户只要求写 Prompt 时自动生图。
+
+如果环境没有可用的生图能力，不要追加这个确认问题，也不要暗示可以在当前环境直接生成。
 
 ## Chinese phrasing guidance
 
