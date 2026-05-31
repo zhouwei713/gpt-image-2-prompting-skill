@@ -28,6 +28,18 @@ A high-quality prompting skill for GPT-Image-2 that turns vague image ideas into
 
 If you want to improve this repository, see [CONTRIBUTING.md](CONTRIBUTING.md).
 
+### Codex
+
+1. Clone this repository or download it as a zip file
+2. Copy the repository folder into your Codex skills directory, for example `$CODEX_HOME/skills/gpt-image-2-prompting-skill`
+3. Start a new Codex session so the skill can be discovered
+4. Ask Codex to use the skill for image prompting tasks, for example:
+   - use gpt-image-2-prompting-skill to improve this image prompt
+   - use gpt-image-2-prompting-skill to create a poster prompt pack
+   - use gpt-image-2-prompting-skill to turn this rough idea into a production prompt
+   - use gpt-image-2-prompting-skill to generate 20 structured GPT-Image-2 prompts
+
+If your Codex setup uses a custom skills path, place the folder in that configured path and keep `SKILL.md` at the repository root.
 
 ### Hermes
 
@@ -298,6 +310,21 @@ Skill 会按这个顺序改写：
 ---
 
 ### 安装 / 使用方式
+
+如果你在 Codex 里使用这个 Skill：
+
+1. 克隆这个仓库，或者下载 zip 后解压
+2. 把仓库目录放到 Codex 的 skills 目录下，例如 `$CODEX_HOME/skills/gpt-image-2-prompting-skill`
+3. 新开一个 Codex 会话，让 Codex 重新发现 Skill
+4. 在图像 Prompt 任务里直接点名使用它
+
+你可以这样说：
+- use gpt-image-2-prompting-skill to improve this image prompt
+- use gpt-image-2-prompting-skill to create a poster prompt pack
+- use gpt-image-2-prompting-skill to turn this rough idea into a production prompt
+- use gpt-image-2-prompting-skill to generate 20 structured GPT-Image-2 prompts
+
+如果你的 Codex 使用自定义 skills 路径，把目录放到对应路径即可，并确保 `SKILL.md` 位于仓库根目录。
 
 如果你在 Hermes 里使用这个 Skill：
 
